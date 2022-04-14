@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em 0.5em;
+  /* */
+}
+.nav label {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+}
+.con span {
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.con span i {
+  margin-right: 1em;
+}
+.book button {
+  border: none;
+  outline: none;
+  margin-left: 1em;
+  padding: 1em;
+  background-color: #219ebc;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.book button:hover {
+  background-color: #1e7a91;
+}
+.section {
+  padding: 1em;
+  background-color: #023047;
+  color: #fff;
+}
+.section ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.section ul li {
+  list-style: none;
+}
+.section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  padding-right: 2em;
+  padding-left: 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.section ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 1.7), rgba(0, 0, 0, 1.7));
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+.text h2 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #fff;
+}
+.text span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text span p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.service {
+  height: 350px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+.service h2 {
+  position: absolute;
+  z-index: 10;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.servCap {
+  padding-top:2em ;
+  position: absolute;
+  width: 80%;
+  height: 300px;
+  background-color: #fb8500;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icoon {
+  width: 15%;
+}
+.icoon .fas {
+  font-size: 130px;
+  display: flex;
+  justify-content: center;
+}
+.option {
+  width: 60%;
+}
+.option ol li {
+  font-size: 20px;
+}
+.option ol p {
+  font-size: 10px;
+  width: 60%;
+  margin-bottom: 2em;
+}
+.test {
+  background-color: #8ecae6;
+  color: #fff;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.test h1 {
+  padding-top: 1.3em;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.test button {
+  border: none;
+  outline: none;
+  padding: 1em;
+  margin-top: 0.5em;
+  cursor: pointer;
+  background-color: #219ebc;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.test button:hover {
+  background-color: #1e7a91;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+html {
+  scroll-behavior: smooth;
+}
+i.fas.fa-align-justify {
+    display: none;
+}
+
+
+@media (max-width: 768px ){
+  .section ul{
+    width: 100%;
+  }
+  .service{
+    padding: 0;
+  }
+ .servCap{
+   border-radius: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  
+  }
+}
+@media (max-width: 500px ){
+  .text {
+    
+    transform: translate(0);
+}
+  .service{
+    height: 550px;
+  }
+   .servCap{
+     align-items: center;
+     flex-direction: column;
+   }
+   .section ul{
+     display: none;
+   }
+   .icoon{
+     display: none;
+   }
+   i.fas.fa-align-justify {
+    display: block !important;
+}
+}

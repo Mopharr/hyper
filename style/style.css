@@ -129,10 +129,9 @@
   z-index: 10;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 .servCap {
-  padding-top:2em ;
+  padding-top: 2em;
   position: absolute;
   width: 80%;
   height: 300px;
@@ -202,50 +201,110 @@ html {
   scroll-behavior: smooth;
 }
 i.fas.fa-align-justify {
-    display: none;
-}
-
-
-@media (max-width: 768px ){
-  .section ul{
-    width: 100%;
-  }
-  .service{
-    padding: 0;
-  }
- .servCap{
-   border-radius: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  
-  }
-}
-@media (max-width: 500px ){
-  .text {
-    
-    transform: translate(0);
-}
-  .service{
-    height: 550px;
-  }
-   .servCap{
-     align-items: center;
-     flex-direction: column;
-   }
-   .section ul{
-     display: none;
-   }
-   .icoon{
-     display: none;
-   }
-   i.fas.fa-align-justify {
-    display: block !important;
-}
-.book{
   display: none;
 }
-.nav{
-  padding: 1.4em 1em;
+.navItem {
+  position: absolute;
+  width: 0%;
+  visibility: hidden;
+  transition: all 0.5s ease;
 }
+#hamburger.active {
+  color: #000;
+}
+.navItem.active {
+  visibility: visible;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 2em 1em 0;
+}
+
+.navItem h1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+}
+.navItem ul li {
+  margin: 2em 0;
+
+  list-style: none;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.navItem .con {
+  margin-bottom: 1em;
+}
+.navItem .con span {
+  font-size: 17px;
+  margin-bottom: 0.5em;
+}
+.navItem button {
+  border: none;
+  outline: none;
+  margin-left: 1em;
+  padding: 1em;
+  background-color: #219ebc;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .section ul {
+    width: 100%;
+  }
+  .service {
+    padding: 0;
+  }
+  .servCap {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .text {
+    transform: translate(0);
+  }
+  .service {
+    height: 550px;
+  }
+  .servCap {
+    align-items: center;
+    flex-direction: column;
+  }
+  .section ul {
+    display: none;
+  }
+  .icoon {
+    display: none;
+  }
+  i.fas.fa-align-justify {
+    display: block !important;
+  }
+  .option {
+    width: 90%;
+    margin: auto;
+  }
+  .book {
+    display: none;
+  }
+  .nav {
+    padding: 1.4em 1em;
+  }
+  .test h1 {
+    font-size: 40px;
+  }
 }

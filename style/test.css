@@ -239,6 +239,62 @@ select::-ms-expand {
 .brake{
   width: 300px;
 }
+.navItem {
+  position: absolute;
+  width: 0%;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+#hamburger.active {
+  color: #000;
+}
+.navItem.active {
+  visibility: visible;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 2em 1em 0;
+}
+
+.navItem h1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+}
+.navItem ul li {
+  margin: 2em 0;
+
+  list-style: none;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.navItem .con {
+  margin-bottom: 1em;
+}
+.navItem .con span {
+  font-size: 17px;
+  margin-bottom: 0.5em;
+}
+.navItem button {
+  border: none;
+  outline: none;
+  margin-left: 1em;
+  padding: 1em;
+  background-color: #219ebc;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 
 .footer {
   background-color: #000;

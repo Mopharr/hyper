@@ -131,6 +131,20 @@
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.bbttn {
+  border: none;
+  outline: none;
+  padding: 1em;
+  background-color: #219ebc;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.obtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .quesion h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -236,7 +250,7 @@
 select::-ms-expand {
   display: none;
 }
-.brake{
+.brake {
   width: 300px;
 }
 .navItem {
@@ -276,7 +290,6 @@ a {
   text-decoration: none;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 .navItem .con {
   margin-bottom: 1em;
@@ -304,16 +317,16 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .quesion{
-  padding: 2em 0;
+  .quesion {
+    padding: 2em 0;
   }
-  .servCap{
+  .servCap {
     width: 100%;
     border-radius: 0;
   }
 }
 @media (max-width: 634px) {
-  .servCap{
+  .servCap {
     height: 100%;
   }
 }
@@ -322,50 +335,47 @@ html {
   scroll-behavior: smooth;
 }
 i.fas.fa-align-justify {
-    display: none;
-}
-
-
-@media (max-width: 768px ){
-  .section ul{
-    width: 100%;
-  }
-  .service{
-    padding: 0;
-  }
- .servCap{
-   border-radius: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  
-  }
-}
-@media (max-width: 500px ){
-  .text {
-    
-    transform: translate(0);
-}
-  .service{
-    height: 550px;
-  }
-   .servCap{
-     align-items: center;
-     flex-direction: column;
-   }
-   .section ul{
-     display: none;
-   }
-   .icoon{
-     display: none;
-   }
-   i.fas.fa-align-justify {
-    display: block !important;
-}
-.book{
   display: none;
 }
-.nav{
-  padding: 1.4em 1em;
+
+@media (max-width: 768px) {
+  .section ul {
+    width: 100%;
+  }
+  .service {
+    padding: 0;
+  }
+  .servCap {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 }
+@media (max-width: 500px) {
+  .text {
+    transform: translate(0);
+  }
+  .service {
+    height: 550px;
+  }
+  .servCap {
+    align-items: center;
+    flex-direction: column;
+  }
+  .section ul {
+    display: none;
+  }
+  .icoon {
+    display: none;
+  }
+  i.fas.fa-align-justify {
+    display: block !important;
+  }
+  .book {
+    display: none;
+  }
+  .nav {
+    padding: 1.4em 1em;
+  }
 }

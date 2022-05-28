@@ -153,15 +153,15 @@ i.fas.fa-align-justify {
   color: #000;
 }
 .content {
-  background-color: #fff;
-  height: 85vh ;
-  padding: 0 4em;
+  background-color: #219ebc;
+  height: 85vh;
+  padding: 2em 4em;
 }
-.content h3{
+.content h3 {
   font-size: 40px;
-  margin: 1.4em 0 2em;
-  font-family: 'Courier New', Courier, monospace;
-  color: #219ebc;
+  margin: 0 0 2em;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
 }
 .content > div {
   width: 350px;
@@ -197,6 +197,17 @@ i.fas.fa-align-justify {
   .text {
     transform: translate(0);
   }
+  .content {
+    padding: 2em 0;
+  }
+  .content > div {
+    width: 90%;
+  }
+  .content > div{
+    padding: 0;
+    margin: 5px;
+  }
+
   .service {
     height: 550px;
   }

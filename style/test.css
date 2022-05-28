@@ -334,6 +334,9 @@ i.fas.fa-align-justify {
   .text {
     transform: translate(0);
   }
+  .custom-dropdown select{
+    width: 90%;
+  }
   .custom-dropdown{
     flex-direction: column;
 

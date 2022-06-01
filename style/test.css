@@ -165,12 +165,29 @@
   color: #3d3d3d;
 }
 .servCap {
-  width: 800px;
-  height: 400px;
+ width: 800px;
+    height: 500px;
   background-color: #e2e0e0;
   border-radius: 10px;
   margin: auto;
 }
+.olaj{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.kkkk{
+  display: flex;
+  flex-direction: column;
+}
+.kkkk input{
+  width: 400px;
+  margin-bottom: 1em;
+  padding: .8em .3em;
+  font-size: 20px;
+}
+
 
 /* Custom dropdown */
 .custom-dropdown strong {

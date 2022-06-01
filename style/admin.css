@@ -1,0 +1,257 @@
+/* ==================  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #219ebc;
+  --front: #66a771;
+  --text: #ef233c;
+  --outline: #8cd790;
+  --hover: #e8e1ef;
+}
+
+/* ======= Navbar ================ */
+.navbar {
+  background-color: var(--background);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  height: 50px;
+  width: 100vw;
+}
+.navbar img {
+  width: 70px;
+  margin-left: 20px;
+}
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  background-color: var(--background);
+
+  /* */
+}
+.ksks h1{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-top: 20px;
+}
+.nav label {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+}
+.con span {
+  font-size: 10px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+.con span i {
+  margin-right: 1em;
+}
+.book button {
+  border: none;
+  outline: none;
+  margin-left: 1em;
+  padding: 1em;
+  background-color: #fff;
+  color: #219ebc;
+  border-bottom: 1px solid #219ebc;
+  cursor: pointer;
+  width: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* ========= Dashboard left ============ */
+.top {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 14.5%;
+  right: 3%;
+  border: 1px solid #aaa;
+  padding: 10px;
+  border-radius: 8px;
+}
+.top img {
+  height: 20px;
+  border-right: 2px solid #aaa;
+  padding-right: 5px;
+}
+.top input {
+  outline: none;
+  border: none;
+  color: rgb(156, 156, 156);
+}
+hr {
+  position: absolute;
+  width: 100vw;
+  top: 20%;
+  border: 2px solid #aaa;
+}
+.buttom {
+  width: 90%;
+  margin: 2em auto;
+  overflow-y: scroll;
+  height: 450px;
+}
+.error {
+  color: #fc7f7f;
+  width: 100%;
+  text-align: center;
+}
+.table {
+  font-size: 0.9em;
+  width: 100%;
+}
+.table thead tr {
+  background-color: #219ebc;
+  color: #fff;
+  text-align: left;
+  font-weight: 500;
+}
+.table th,
+.table td {
+  padding: 12px 20px;
+}
+.table tbody tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+.dashboard {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #66a771;
+  overflow-y: auto;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  z-index: 11;
+}
+
+.regis {
+  display: flex;
+  align-items: center;
+}
+
+.reg {
+  background-color: #fff;
+  text-decoration: none;
+  color: #285943;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin: 70px 10px;
+}
+.sign {
+  position: absolute;
+  bottom: 100px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  background: transparent;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .bar {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .sign {
+    position: absolute;
+    bottom: 75px;
+  }
+  .dashboard {
+    width: 0%;
+    margin: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+
+  .dashboard.active {
+    background-color: #66a771;
+    width: 300px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    height: 100vh;
+  }
+  .hamburger.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.is-active .bar:nth-child(1) {
+    transition: all 0.5s ease;
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.is-active .bar:nth-child(3) {
+    transition: all 0.5s ease;
+    transform: translateY(-5px) rotate(-45deg);
+  }
+
+  .buttom {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    overflow-x: hidden;
+    position: static;
+  }
+  .top {
+    width: 80%;
+  }
+  .buttom {
+    width: 100vw;
+  }
+}
+
+.processing {
+  display: none;
+  padding-top: 45px;
+  /* display: flex; */
+  justify-content: center;
+}

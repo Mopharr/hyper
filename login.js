@@ -1,0 +1,55 @@
+// VALIDATION FOR THE LOGIN PAGE
+const process = document.querySelector("#process");
+const submit = document.querySelector("#submit");
+function processing() {
+  process.style.display = "block";
+  submit.style.display = "none";
+}
+function notProcessing() {
+  process.style.display = "none";
+  submit.style.display = "block";
+}
+
+function login() {
+  var user = document.getElementById("username").value;
+  var pass = document.getElementById("password").value;
+  var error = document.getElementById("error");
+  if (!user || !pass) {
+    error.innerHTML = "Please provide your login credentials";
+    setTimeout((_) => (error.innerHTML = ""), 3000);
+  } else {
+    processing();
+    const url = "https://hyper-test.herokuapp.com/api/signin";
+    const data = {
+      userName: user,
+      password: pass,
+    };
+    const fetchData = {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    };
+    fetch(url, fetchData)
+      .then((resp) => {
+        if (resp.ok) {
+          return resp.json();
+        } else {
+          return Promise.reject("Oops!!! Something went wrong.");
+        }
+      })
+      .then((data) => {
+        notProcessing();
+        console.log(data);
+        if (data.status === 200) {
+          user = "";
+          pass = "";
+          self.location = "/admin.html";
+        } else {
+          error.innerHTML = data.Message;
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+}

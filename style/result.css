@@ -153,19 +153,30 @@ i.fas.fa-align-justify {
   color: #000;
 }
 .content {
-  height: 82vh;
-  background-color: #1e7a91;
+  background-color: #219ebc;
+  height: 85vh;
+  padding: 2em 4em;
+}
+.content h3 {
+  font-size: 40px;
+  margin: 0 0 2em;
+  font-family: "Courier New", Courier, monospace;
   color: #fff;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
 }
-.content p{
-    margin-top: 10px;
+.content > div {
+  width: 350px;
+  margin: auto;
+  background-color: #219ebc;
+  padding: 2em;
+  color: #fff;
+  border-radius: 30px 0 30px 0;
 }
-.content span{
-    font-size: 70px;
-    margin: 0 10px;
+.content .lll {
+  font-size: 25px;
+}
+.content span {
+  font-size: 50px;
+  margin: 0 10px;
 }
 
 @media (max-width: 768px) {
@@ -186,6 +197,17 @@ i.fas.fa-align-justify {
   .text {
     transform: translate(0);
   }
+  .content {
+    padding: 2em 0;
+  }
+  .content > div {
+    width: 90%;
+  }
+  .content > div{
+    padding: 0;
+    margin: 5px;
+  }
+
   .service {
     height: 550px;
   }

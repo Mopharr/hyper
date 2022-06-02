@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="pic">
+            <img src="./style/images/environmental-safety1.jpg" alt="">
+        </div>
+        <div class="form">
+            <!-- <form onsubmit="event.preventDefault()"> -->
+                <h2>Admin Login</h2>
+                <span id="error"></span>
+                <div class="input-main">
+                    <input autocomplete="off" type="text" id="username" placeholder="Username">
+                    
+                </div>
+                <div class="input-main">
+                    <input autocomplete="off" type="password" id="password" aria-autocomplete="false" placeholder="Password">
+                </div>
+                <div class="submit" > 
+                    <button id="process" class="processing">
+                        <img  src="./style/images/unnamed.gif" alt="Loading">
+                    </button>
+                    <input id="submit" onclick="login()" type="submit">
+                </div>
+
+            <!-- </form> -->
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>

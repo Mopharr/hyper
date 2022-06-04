@@ -16,6 +16,8 @@ let confusion = document.getElementById("confusion");
 
 let btn = document.getElementById("result-btn");
 
+
+
 let totalValue, result;
 function calcHyper(
   _headache,

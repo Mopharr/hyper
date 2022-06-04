@@ -41,7 +41,7 @@ async function calcHyper(
     _urine +
     _confusion;
   let result = totalValue / 9.99;
-  let data = {
+  let payload = {
     age: age.value,
     dob: date.value,
     name: fullname.value,
@@ -51,12 +51,18 @@ async function calcHyper(
   await fetch(url, {
     method: "POST",
     headers: {
-      Accept: "application.json",
+      Accept: "application/json, text/plain, */*",
       "Content-Type": "application/json",
     },
-    Body: data,
-  });
-  localStorage.setItem("result", JSON.stringify(data));
+    body: JSON.stringify(payload),
+  })
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (res) {
+      console.log(res.data);
+    });
+  localStorage.setItem("result", JSON.stringify(payload));
   return result;
 }
 btn.addEventListener("click", async function (e) {

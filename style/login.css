@@ -65,8 +65,9 @@ input[type="submit"]{
 .input-main{
     position: relative;
     font-size: 18px;
-    padding-top:20px;
-    margin-bottom:10px;
+        margin-bottom: 2em;
+        border: 2px solid #219ebc;
+    border-radius: 20px;
 }
 .placeholder{
     position: absolute;
@@ -89,14 +90,14 @@ button img{
 .processing {
     width: 100%;
     display: none;
-    background-color: #285943;
+    background-color: #219ebc;
     border-radius: 8px;
     cursor: pointer;
     padding: 10px 30px;
 }
 #submit {
     cursor: pointer;
-    background-color: #285943;
+    background-color: #219ebc;
     padding: 10px 30px;
     color: #f5f5f5;
     font-size: 18px;

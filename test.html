@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style/test.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Document</title>
   </head>
@@ -91,14 +92,14 @@
       <div class="olaj">
         <h2>Fill in infomation:</h2>
         <div class="kkkk">
-          <input type="text" placeholder="Full Name" id="fullname" />
-          <input type="number" placeholder="Age" id="age" />
-          <select id="sex">
+          <input type="text" placeholder="Full Name" id="fullname" data-aos="fade-left" />
+          <input type="number" placeholder="Age" id="age" data-aos="fade-right" />
+          <select id="sex" data-aos="fade-left">
                 <option value="">-------</option>
                 <option value="male">Male</option>
                 <option value="Female">Female</option>
               </select>
-          <input type="date" placeholder="Date" id="date" />
+          <input type="date" placeholder="Date" id="date" data-aos="fade-right"/>
         </div>
       </div>
       <div class="quesion">
@@ -109,8 +110,8 @@
 
           <div class="quesions">
             <span class="custom-dropdown big">
-              <strong>Are you having several Headache :</strong>
-              <select id="headache">
+              <strong data-aos="fade-right">Are you having several Headache :</strong>
+              <select id="headache" data-aos="fade-right">
                 <option value="">-------</option>
                 <option value="0.33">No Headache</option>
                 <option value="0.66">Little Headache</option>
@@ -118,8 +119,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Any Vision problem :</strong>
-              <select id="vision">
+              <strong data-aos="fade-right">Any Vision problem :</strong>
+              <select id="vision" data-aos="fade-right">
                 <option value="">-------</option>
 
                 <option value="0.33">No Vision Problem</option>
@@ -128,8 +129,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Any chest pain :</strong>
-              <select id="chest">
+              <strong data-aos="fade-right">Any chest pain :</strong>
+              <select id="chest" data-aos="fade-right">
                 <option value="">-------</option>
 
                 <option value="0.33">No Chest Pain</option>
@@ -139,8 +140,8 @@
             </span>
 
             <span class="custom-dropdown big">
-              <strong>Irregular Heartbeat :</strong>
-              <select id="heartbeat">
+              <strong data-aos="fade-right">Irregular Heartbeat :</strong>
+              <select id="heartbeat" data-aos="fade-right">
                 <option value="">-------</option>
 
                 <option value="0.33">No Irregular Heartbeat</option>
@@ -149,8 +150,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Dizzness :</strong>
-              <select id="dizzy">
+              <strong data-aos="fade-right">Dizzness :</strong>
+              <select id="dizzy" data-aos="fade-right">
                 <option value="">-------</option>
 
                 <option value="0.33">No Dizzness</option>
@@ -159,8 +160,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Trouble Sleeping :</strong>
-              <select id="sleep">
+              <strong data-aos="fade-right">Trouble Sleeping :</strong>
+              <select id="sleep" data-aos="fade-right">
                 <option value="">-------</option>
 
                 <option value="0.33">NO</option>
@@ -169,8 +170,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Pain in the the Stomach :</strong>
-              <select id="stomach">
+              <strong data-aos="fade-right">Pain in the the Stomach :</strong>
+              <select id="stomach" data-aos="fade-right">
                 <option>-------</option>
 
                 <option value="0.33">No Pain</option>
@@ -179,8 +180,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>NoseBleading :</strong>
-              <select id="nose">
+              <strong data-aos="fade-right">NoseBleading :</strong>
+              <select id="nose" data-aos="fade-right">
                 <option>-------</option>
 
                 <option value="0.33">No Nose bleed</option>
@@ -189,8 +190,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Blood in Urine :</strong>
-              <select id="urine">
+              <strong data-aos="fade-right">Blood in Urine :</strong>
+              <select id="urine" data-aos="fade-right">
                 <option>-------</option>
 
                 <option value="0.33">No Blood in Urine</option>
@@ -199,8 +200,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Confusion :</strong>
-              <select id="confusion">
+              <strong data-aos="fade-right">Confusion :</strong>
+              <select id="confusion" data-aos="fade-right">
                 <option>-------</option>
 
                 <option value="0.33">Not Confuse</option>
@@ -209,7 +210,7 @@
               </select>
             </span>
           </div>
-          <div class="obtn">
+          <div class="obtn" data-aos="fade-right">
             <a class="bbttn" href="result.html" id="result-btn">Check Result</a>
           </div>
                     </div>
@@ -230,5 +231,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./hype.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

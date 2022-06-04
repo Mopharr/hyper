@@ -83,7 +83,7 @@
 .first h3{
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 .first p{
   font-size: 20px;
@@ -97,7 +97,7 @@
 .second h2{
    font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 .capp{
   display: flex;

@@ -73,6 +73,41 @@
   background-color: #fff;
   color: #000;
 }
+.info{
+  margin: 2em 0 ;
+  text-align: center;
+}
+.first{
+  text-align: center;
+}
+.first h3{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 2em;
+}
+.first p{
+  font-size: 20px;
+  margin: .7em 0;
+}
+
+.second{
+  text-align: center;
+
+}
+.second h2{
+   font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 2em;
+}
+.capp{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.caoo{
+  width: 400px;
+}
 
 .header {
   height: 500px;

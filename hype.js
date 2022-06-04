@@ -16,7 +16,7 @@ let confusion = document.getElementById("confusion");
 
 let btn = document.getElementById("result-btn");
 
-let totalValue, result;
+let totalValue;
 function calcHyper(
   _headache,
   _vision,
@@ -40,7 +40,7 @@ function calcHyper(
     _nose +
     _urine +
     _confusion;
-  result = totalValue / 9.99;
+  let result = totalValue / 9.99;
   let data = {
     bioData: {
       fullname: fullname.value,
@@ -67,5 +67,5 @@ btn.addEventListener("click", (e) => {
     parseFloat(urine.value),
     parseFloat(confusion.value)
   );
-  window.location("/result.html")
+  window.location = "./result.html";  
 });

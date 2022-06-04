@@ -12,3 +12,7 @@ menuC.addEventListener("click", mobileMenu);
 const close = () => {
   menuLinks.classList.toggle("active");
 };
+
+const result = localStorage.getItem("result");
+const display = document.getElementById("display");
+display.innerHTML = `${JSON.parse(result).result.toFixed(2)} %`

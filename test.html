@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style/test.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Document</title>
   </head>
   <body>
@@ -26,8 +28,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="#section">Service</a></li>
           <li><a href="/test.html">Test</a></li>
-        <li><a href="/login.html">Admin</a></li>
-          <li><a href="/">Contact Us</a></li>
+          <li><a href="/login.html">Admin</a></li>
         </ul>
         <div class="con">
           <span><i class="fas fa-phone"></i>hospital@gmail.com</span>
@@ -41,36 +42,78 @@
           <li><a href="/">Home</a></li>
           <li><a href="#section">Service</a></li>
           <li><a href="/test.html">Test</a></li>
-        <li><a href="/admin.html">Admin</a></li>
+          <li><a href="/login.html">Admin</a></li>
         </ul>
       </div>
-      <div class="header">
-        <img src="/pexels-thirdman-7659564.jpg" alt="" />
-
-        <div class="text">
-          <h2>Welcome</h2>
-          <span
-            >Trust you've take a<br />
-            <p>Great Step</p>
-          </span>
-        </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/pexels-thirdman-7659564.jpg" alt="First slide">
+       <div class="text">
+        <h2>Welcome</h2>
+         <p >How are you feeling</p> <br />
+        </span>
+        <p>Check up at your comfort zone</p>
       </div>
+    </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="/etta.jpg" alt="Second slide">
+       <div class="text">
+        <h2>Welcome</h2>
+         <p >How are you feeling</p> <br />
+        </span>
+        <p>Check up at your comfort zone</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/blood.jpeg" alt="Third slide">
+       <div class="text">
+        <h2>Welcome</h2>
+         <p >How are you feeling</p> <br />
+        </span>
+        <p>Check up at your comfort zone</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
       <div class="olaj">
         <h2>Fill in infomation:</h2>
+        <form action="">
+
         <div class="kkkk">
-          <input type="text" placeholder="Full Name" id="fullname" />
-          <input type="number" placeholder="Age" id="age" />
-          <input type="text" placeholder="Sex" id="sex" />
-          <input type="date" placeholder="Date" id="date" />
+          <input type="text" placeholder="Full Name" id="fullname" data-aos="fade-left" required/>
+          <input type="number" placeholder="Age" id="age" data-aos="fade-right" required/>
+          <select id="sex" data-aos="fade-left" required>
+                <option value="">-------</option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+          <input type="date" placeholder="Date" id="date" data-aos="fade-right" required/>
         </div>
       </div>
       <div class="quesion">
         <h1>Take your test</h1>
         <div class="servCap">
+          <img src="/pexels-thirdman-7659564.jpg" alt="">
+          <div class="connf">
+
           <div class="quesions">
             <span class="custom-dropdown big">
-              <strong>Are you having several Headache :</strong>
-              <select id="headache">
+              <strong data-aos="fade-right">Are you having several Headache :</strong>
+              <select id="headache" data-aos="fade-right" required>
                 <option value="">-------</option>
                 <option value="0.33">No Headache</option>
                 <option value="0.66">Little Headache</option>
@@ -78,8 +121,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Any Vision problem :</strong>
-              <select id="vision">
+              <strong data-aos="fade-right">Any Vision problem :</strong>
+              <select id="vision" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Vision Problem</option>
@@ -88,8 +131,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Any chest pain :</strong>
-              <select id="chest">
+              <strong data-aos="fade-right">Any chest pain :</strong>
+              <select id="chest" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Chest Pain</option>
@@ -99,8 +142,8 @@
             </span>
 
             <span class="custom-dropdown big">
-              <strong>Irregular Heartbeat :</strong>
-              <select id="heartbeat">
+              <strong data-aos="fade-right">Irregular Heartbeat :</strong>
+              <select id="heartbeat" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Irregular Heartbeat</option>
@@ -109,8 +152,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Dizzness :</strong>
-              <select id="dizzy">
+              <strong data-aos="fade-right">Dizzness :</strong>
+              <select id="dizzy" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Dizzness</option>
@@ -119,18 +162,18 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Trouble Sleeping :</strong>
-              <select id="sleep">
+              <strong data-aos="fade-right">Trouble Sleeping :</strong>
+              <select id="sleep" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">NO</option>
                 <option value="0.66">Not Constant</option>
-                <option value="0.99">Constant Trouble Sleeping </option>
+                <option value="0.99">Constant Trouble Sleeping</option>
               </select>
             </span>
-             <span class="custom-dropdown big">
-              <strong>Pain in the the Stomach :</strong>
-              <select id="stomach">
+            <span class="custom-dropdown big">
+              <strong data-aos="fade-right">Pain in the the Stomach :</strong>
+              <select id="stomach" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">No Pain</option>
@@ -138,9 +181,9 @@
                 <option value="0.99">Very painful</option>
               </select>
             </span>
-             <span class="custom-dropdown big">
-              <strong>NoseBleading :</strong>
-              <select id="nose">
+            <span class="custom-dropdown big">
+              <strong data-aos="fade-right">NoseBleading :</strong>
+              <select id="nose" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">No Nose bleed</option>
@@ -149,8 +192,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Blood in Urine :</strong>
-              <select id="urine">
+              <strong data-aos="fade-right">Blood in Urine :</strong>
+              <select id="urine" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">No Blood in Urine</option>
@@ -159,8 +202,8 @@
               </select>
             </span>
             <span class="custom-dropdown big">
-              <strong>Confusion :</strong>
-              <select id="confusion">
+              <strong data-aos="fade-right">Confusion :</strong>
+              <select id="confusion" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">Not Confuse</option>
@@ -172,7 +215,12 @@
           <div class="obtn">
             <a class="bbttn" href="/result.html" id="result-btn">Check Result</a>
           </div>
+                    </div>
+
+
         </div>
+                            </form>
+
       </div>
       <div class="footer">
         <p>Copyright © 2018 Name. | Solved by Revocube</p>
@@ -180,6 +228,9 @@
     </div>
     <script src="/index.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script
       src="https://kit.fontawesome.com/6a7c1e7a59.js"
       crossorigin="anonymous"

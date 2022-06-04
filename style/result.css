@@ -155,28 +155,47 @@ i.fas.fa-align-justify {
 .content {
   background-color: #219ebc;
   height: 85vh;
-  padding: 2em 4em;
+  padding: 8em 4em 2em;
 }
 .content h3 {
   font-size: 40px;
-  margin: 0 0 2em;
+  margin: 0 0;
   font-family: "Courier New", Courier, monospace;
   color: #fff;
 }
 .content > div {
-  width: 350px;
-  margin: auto;
-  background-color: #219ebc;
-  padding: 2em;
+  margin-top: 2em;
+
   color: #fff;
   border-radius: 30px 0 30px 0;
 }
 .content .lll {
   font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
 }
 .content span {
   font-size: 50px;
   margin: 0 10px;
+}
+.recc h2 {
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+.recc ol li {
+  margin-bottom: 0.6em;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 2em;
+}
+.content button {
+  border: none;
+  outline: none;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #fff;
+  color: #1e7a91;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -203,7 +222,7 @@ i.fas.fa-align-justify {
   .content > div {
     width: 90%;
   }
-  .content > div{
+  .content > div {
     padding: 0;
     margin: 5px;
   }
@@ -223,6 +242,10 @@ i.fas.fa-align-justify {
   }
   i.fas.fa-align-justify {
     display: block !important;
+    transition: all .3s ease;
+  }
+  i.fas.fa-align-justify:hover{
+    color: #1e7a91;
   }
   .option {
     width: 90%;

@@ -91,15 +91,17 @@
 </div>
       <div class="olaj">
         <h2>Fill in infomation:</h2>
+        <form action="">
+
         <div class="kkkk">
-          <input type="text" placeholder="Full Name" id="fullname" data-aos="fade-left" />
-          <input type="number" placeholder="Age" id="age" data-aos="fade-right" />
-          <select id="sex" data-aos="fade-left">
+          <input type="text" placeholder="Full Name" id="fullname" data-aos="fade-left" required/>
+          <input type="number" placeholder="Age" id="age" data-aos="fade-right" required/>
+          <select id="sex" data-aos="fade-left" required>
                 <option value="">-------</option>
                 <option value="male">Male</option>
                 <option value="Female">Female</option>
               </select>
-          <input type="date" placeholder="Date" id="date" data-aos="fade-right"/>
+          <input type="date" placeholder="Date" id="date" data-aos="fade-right" required/>
         </div>
       </div>
       <div class="quesion">
@@ -111,7 +113,7 @@
           <div class="quesions">
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Are you having several Headache :</strong>
-              <select id="headache" data-aos="fade-right">
+              <select id="headache" data-aos="fade-right" required>
                 <option value="">-------</option>
                 <option value="0.33">No Headache</option>
                 <option value="0.66">Little Headache</option>
@@ -120,7 +122,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Any Vision problem :</strong>
-              <select id="vision" data-aos="fade-right">
+              <select id="vision" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Vision Problem</option>
@@ -130,7 +132,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Any chest pain :</strong>
-              <select id="chest" data-aos="fade-right">
+              <select id="chest" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Chest Pain</option>
@@ -141,7 +143,7 @@
 
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Irregular Heartbeat :</strong>
-              <select id="heartbeat" data-aos="fade-right">
+              <select id="heartbeat" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Irregular Heartbeat</option>
@@ -151,7 +153,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Dizzness :</strong>
-              <select id="dizzy" data-aos="fade-right">
+              <select id="dizzy" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">No Dizzness</option>
@@ -161,7 +163,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Trouble Sleeping :</strong>
-              <select id="sleep" data-aos="fade-right">
+              <select id="sleep" data-aos="fade-right" required>
                 <option value="">-------</option>
 
                 <option value="0.33">NO</option>
@@ -171,7 +173,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Pain in the the Stomach :</strong>
-              <select id="stomach" data-aos="fade-right">
+              <select id="stomach" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">No Pain</option>
@@ -181,7 +183,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">NoseBleading :</strong>
-              <select id="nose" data-aos="fade-right">
+              <select id="nose" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">No Nose bleed</option>
@@ -191,7 +193,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Blood in Urine :</strong>
-              <select id="urine" data-aos="fade-right">
+              <select id="urine" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">No Blood in Urine</option>
@@ -201,7 +203,7 @@
             </span>
             <span class="custom-dropdown big">
               <strong data-aos="fade-right">Confusion :</strong>
-              <select id="confusion" data-aos="fade-right">
+              <select id="confusion" data-aos="fade-right" required>
                 <option>-------</option>
 
                 <option value="0.33">Not Confuse</option>
@@ -215,7 +217,10 @@
           </div>
                     </div>
 
+
         </div>
+                            </form>
+
       </div>
       <div class="footer">
         <p>Copyright © 2018 Name. | Solved by Revocube</p>

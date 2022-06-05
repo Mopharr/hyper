@@ -16,10 +16,8 @@ let confusion = document.getElementById("confusion");
 
 let btn = document.getElementById("result-btn");
 
-
-
-let totalValue, result;
-function calcHyper(
+let totalValue;
+async function calcHyper(
   _headache,
   _vision,
   _chest,
@@ -42,22 +40,35 @@ function calcHyper(
     _nose +
     _urine +
     _confusion;
-  result = totalValue / 9.99;
-  let data = {
-    bioData: {
-      fullname: fullname.value,
-      age: age.value,
-      Gender: sex.value,
-      date: date.value,
-    },
-    result: result,
+  let result = totalValue / 9.99;
+  let payload = {
+    age: age.value,
+    dob: date.value,
+    name: fullname.value,
+    status: result,
   };
-  localStorage.setItem("result", JSON.stringify(data));
+  let url = "https://hyper-test.herokuapp.com/api/post_user";
+  await fetch(url, {
+    method: "POST",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  })
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (res) {
+      console.log(res.data);
+    });
+  localStorage.setItem("result", JSON.stringify(payload));
   return result;
 }
-btn.addEventListener("click", (e) => {
+btn.addEventListener("click", async function (e) {
   e.preventDefault();
-  calcHyper(
+  console.log("Testing....");
+  await calcHyper(
     parseFloat(headache.value),
     parseFloat(vision.value),
     parseFloat(chest.value),
@@ -69,5 +80,6 @@ btn.addEventListener("click", (e) => {
     parseFloat(urine.value),
     parseFloat(confusion.value)
   );
-  window.location("/result.html")
+  console.log("Testing....");
+  window.location = "./result.html";
 });

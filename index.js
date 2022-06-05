@@ -14,5 +14,5 @@ const close = () => {
 };
 
 const result = localStorage.getItem("result");
-const display = document.getElementById("display");
-display.innerHTML = `${JSON.parse(result).result.toFixed(2)} %`
+const display = document.getElementById("disresult");
+display.innerHTML = `${JSON.parse(result).status.toFixed(2)} %`

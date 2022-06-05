@@ -14,5 +14,16 @@ const close = () => {
 };
 
 const result = localStorage.getItem("result");
+const hyper = document.getElementById("lll");
+const username = document.getElementById("username");
 const display = document.getElementById("disresult");
 display.innerHTML = `${JSON.parse(result).status.toFixed(2)} %`
+username.innerHTML = `${JSON.parse(result).name}`
+
+if(JSON.parse(result).status <= 0.33) {
+  hyper.innerHTML = `(YOU ARE HYPERTHETIC)`
+} else if(JSON.parse(result).status <= 0.66 && JSON.parse(result).status > 0.33) {
+  hyper.innerHTML = `(NORMAL)`
+} else {
+  hyper.innerHTML = `(HIGH)`
+}

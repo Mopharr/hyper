@@ -21,7 +21,7 @@ const loadData = async () => {
                         <td> ${record.name} </td>
                         <td> ${record.age} </td>
                         <td> ${record.dob} </td>
-                        <td> ${record.status} % </td>
+                        <td> ${parseFloat(record.status).toFixed(2)} % </td>
                     `;
         tableBody.append(row);
       }

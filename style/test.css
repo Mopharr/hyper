@@ -10,6 +10,14 @@
   padding: 0 1em;
   /* */
 }
+.conte {
+    display: flex;
+    flex-direction: column;
+}
+a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+}
 .nav label {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;

@@ -81,5 +81,5 @@ btn.addEventListener("click", async function (e) {
     parseFloat(confusion.value)
   );
   console.log("Testing....");
-  window.location = "./result.html";
+  window.location = "/result.html";
 });

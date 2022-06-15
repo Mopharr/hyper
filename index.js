@@ -16,9 +16,11 @@ const close = () => {
 const result = localStorage.getItem("result");
 const hyper = document.getElementById("lll");
 const username = document.getElementById("username");
+const user = document.getElementById("user");
 const display = document.getElementById("disresult");
 display.innerHTML = `${JSON.parse(result).status.toFixed(2)} %`;
 username.innerHTML = `${JSON.parse(result).name}`;
+user.innerHTML = `${JSON.parse(result).name}`;
 const rec = document.getElementById("recco");
 
 const hypo = [

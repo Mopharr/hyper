@@ -116,7 +116,7 @@ hr {
   width: 90%;
   margin: 2em auto;
   overflow-y: scroll;
-  height: 100%px;
+  height: 100%;
 }
 .error {
   color: #fc7f7f;

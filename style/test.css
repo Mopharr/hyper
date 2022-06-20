@@ -48,6 +48,31 @@ a:hover {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.submit button img{
+    width: 50px;
+    background: transparent;
+}
+.processing {
+    width: 100%;
+    display: none;
+    background-color: #219ebc;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+#submit {
+    cursor: pointer;
+    background-color: #219ebc;
+    padding: 10px 30px;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 6px;
+}
+input[type="submit"]{
+    color: #f5f5f5;
+    cursor: pointer;
+}
 .book button:hover {
   background-color: #1e7a91;
 }

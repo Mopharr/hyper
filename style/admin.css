@@ -227,14 +227,6 @@ hr {
     transition: all 0.5s ease;
     transform: translateY(-5px) rotate(-45deg);
   }
-
-  .buttom {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-20%, -50%);
-    margin: 30px 0;
-  }
 }
 
 @media (max-width: 560px) {
@@ -247,6 +239,12 @@ hr {
   }
   .buttom {
     width: 100vw;
+  }
+  .nav{
+    height: 50px;
+  }
+  .book{
+    display: none;
   }
 }
 

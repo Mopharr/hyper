@@ -1,6 +1,16 @@
 const menu = document.querySelector("#hamburger");
 const menuC = document.querySelector("#close");
 const menuLinks = document.querySelector(".navItem");
+const process = document.querySelector("#process");
+const submit = document.querySelector("#submit");
+function processing() {
+  process.style.display = "block";
+  submit.style.display = "none";
+}
+function notProcessing() {
+  process.style.display = "none";
+  submit.style.display = "block";
+}
 
 const mobileMenu = () => {
   menuLinks.classList.toggle("active");
